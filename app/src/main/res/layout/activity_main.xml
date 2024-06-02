@@ -5,39 +5,16 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.github.gcacace.signaturepad.views.SignaturePad
-        android:id="@+id/signature_view"
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfView"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:visibility="visible" />
+        android:layout_height="match_parent" />
 
     <Button
-        android:id="@+id/btn_clear"
-        android:layout_width="match_parent"
+        android:id="@+id/btnPickDocument"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/signature_view"
-        android:text="Clear"
-        android:visibility="visible" />
-
-    <Button
-        android:id="@+id/btn_load"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btn_clear"
-        android:text="Load"
-        android:visibility="visible" />
-
-    <Button
-        android:id="@+id/btn_next"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btn_load"
-        android:text="Open Document" />
-
-    <ImageView
-        android:id="@+id/iv_signature"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/btn_next"
-        android:visibility="visible" />
+        android:text="Pick Document"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
 </RelativeLayout>
